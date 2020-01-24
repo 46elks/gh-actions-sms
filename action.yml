@@ -1,0 +1,27 @@
+name: '46elks SMS message'
+description: 'Send an SMS with the 46elks API'
+inputs:
+  apiUsername:
+    description: 'Your 46elks API username.'
+    required: true
+  apiPassword:
+    description: 'Your 46elks API password.'
+    required: true
+  to:
+    description: 'The phone number to send an SMS to'
+    required: true
+    default: '+46700000000'
+  from:
+    description: 'The phone number or text sender id to send the SMS from'
+    required: true
+    default: 'ElkAction'
+  message:
+    description: 'The message to send'
+    required: true
+    default: 'Elky greetings from GitHub actions!'
+outputs:
+  id:
+    description: 'The 46elks SMS ID of the created message'
+runs:
+  using: 'node12'
+  main: 'index.js'
