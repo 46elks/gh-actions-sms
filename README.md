@@ -6,20 +6,30 @@ Actions.
 
 ## Inputs
 
-* `apiUsername` - **Required**: Your 46elks API username, available at
-  the [46elks dashboard](https://46elks.com/account).
-* `apiPassword` - **Required**: Your 46elks API password, also available
-  from the 46elks dashboard.
-* `from` - **Required**: The number or alpha numerical sender ID you
-  would like to send the SMS from. Defaults to `"ElkAction"`.
-* `to` - **Required**: The number you would like to send the SMS to.
-  Defaults to `+4670000000`, which does not actually send a message and
-  is free, but will show up in your logs.
-* `message` - **Required**: The message to send with the SMS.
+### `apiUsername`
+**Required**: Your 46elks API username, available at the
+[46elks dashboard](https://46elks.com/account).
+
+### `apiPassword`
+**Required**: Your 46elks API password, also available from the 46elks
+dashboard.
+
+### `from`
+**Required**: The number or alpha numerical sender ID you would like to
+send the SMS from. Defaults to `"ElkAction"`.
+
+### `to`
+**Required**: The number you would like to send the SMS to. Defaults to
+`+4670000000`, which does not actually send a message and is free, but
+will show up in your logs.
+
+### `message`
+**Required**: The message to send with the SMS.
 
 ## Outputs
 
-* `id` - The 46elks SMS ID of the SMS that was created.
+### `id`
+The 46elks SMS ID of the SMS that was created.
 
 
 ## Usage
