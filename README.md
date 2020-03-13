@@ -4,8 +4,6 @@ Send an SMS with the [46elks](https://46elks.com/) API from GitHub
 Actions.
 
 
-## Inputs
-
 ## Usage
 Store your API credentials in your repository's `Settings` -> `Secrets`,
 then you'll be able to use them as below.
@@ -23,6 +21,8 @@ then you'll be able to use them as below.
 - name: Get the SMS ID
   run: "echo \"SMS ID: ${{ steps.sms.outputs.id }}\""
 ```
+
+## Inputs
 
 ### `apiUsername`
 **Required**: Your 46elks API username, available at the
