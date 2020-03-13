@@ -1,4 +1,4 @@
-name: '46elks SMS message'
+name: '46elks SMS'
 description: 'Send an SMS with the 46elks API'
 inputs:
   apiUsername:
