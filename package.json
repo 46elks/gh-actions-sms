@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/46elks/gh-actions-sms#readme",
   "dependencies": {
-    "@actions/core": "^1.2.2"
+    "@actions/core": "^1.2.6"
   }
 }
