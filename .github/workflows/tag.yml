@@ -1,0 +1,15 @@
+name: 'Move @v1'
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+jobs:
+  tag:
+    name: 'Move @1'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Move the tag to the latest commit on main
+        run: |
+          git tag --force v1
+          git push --force --tags
