@@ -10,7 +10,7 @@ then you'll be able to use them as below.
 
 ```yaml
 - name: Send SMS action step
-  uses: 46elks/gh-actions-sms@v1.0.0
+  uses: 46elks/gh-actions-sms@v1
   id: sms
   with:
     apiUsername: ${{ secrets.ELKS_API_USERNAME }}
